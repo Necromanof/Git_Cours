@@ -1,0 +1,27 @@
+.star-rating {
+    display: flex;
+    justify-content: center;
+    flex-flow: row-reverse;
+    gap: 5px;
+  }
+
+.star-rating input {
+    display: none;
+  }
+  
+  .star-rating label {
+    font-size: 2rem;
+    color: grey;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out;
+  }
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: yellow;
+}
+
+.star-rating label {
+    transition: color 0.5s ease-in-out;
+  }
